@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuze Shore</title>
+<link rel="stylesheet" href="css/style.css">
+   <title>Digital Clock</title>
+
+    <style>
+      body {
+    background: #121212;
+    color: white;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.light-mode {
+    background: #ffffff;
+    color: #222222;
+}
+
+body.light-mode .product-card {
+    background: #f1f1f1;
+    color: #222222;
+}
+
+#themeButton {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #ff9800;
+    cursor: pointer;
+}
+        body {
+            background: #121212;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 40px 10px;
+        }
+
+        h1 {
+            color: #ff9800;
+        }
+
+        #clock {
+            font-size: 30px;
+            margin-top: 30px;
+        }
+  
+      .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 50px;
+    background: #333333;
+    border-radius: 20px;
+}
+
+.logo {
+    color: #ff9800;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #ff9800;
+}
+
+@media (max-width: 450px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
+        body {
+            background: #151515;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: orange;
+        }
+
+        .product {
+            background: #292929;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 12px;
+            max-width: 350px;
+        }
+
+        button {
+            background: #00a86b;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+        }
+      .product-image {
+    width: 100%;
+    max-width: 280px;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 15px;
+      }
+      body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color: #ff9800;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.product-card {
+    background: #222222;
+    max-width: 350px;
+    margin: 25px auto;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #444444;
+    box-shadow: 0 5px 15px #00000055;
+}
+
+.product-card h2 {
+    color: #ff9800;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+button,
+.contact-button {
+    display: inline-block;
+    background: #25d366;
+    color: #111111;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+.contact-button:hover {
+    opacity: 0.8;
+        }
+      .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+.product-card {
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    object-fit: contain;
+}
+
+@media (max-width: 700px) {
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .product-card {
+        padding: 1px;
+    }
+}
+
+@media (max-width: 380px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+  }
+      .search-box {
+    width: 90%;
+    max-width: 450px;
+    padding: 14px;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #555555;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: #222222;
+    color: white;
+    font-size: 16px;
+}
+
+.search-box:focus {
+    outline: 2px solid #ff9800;
+}
+      .add-to-cart {
+    background: #ff9800;
+    color: #111111;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+.cart-counter {
+    background: #222222;
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 8px;
+    margin: 15px;
+    color: #ff9800;
+    font-weight: bold;
+        }
+   .star {
+    background: transparent;
+    color: #777777;
+    border: none;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.star.selected {
+    color: #ff9800;
+}   
+      .mobile-nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.menu-links {
+    display: none;
+    margin-top: 15px;
+}
+
+.menu-links a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    background: #222222;
+    border-bottom: 1px solid #444444;
+}
+
+.menu-links a:hover {
+    color: #ff9800;
+}
+
+#menuButton {
+    padding: 12px 18px;
+    background: #ff9800;
+    border: none;
+    border-radius: 6px;
+}
+      .reviews {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.review-card {
+    background: #222222;
+    padding: 18px;
+    border-radius: 10px;
+    margin: 15px 0;
+    text-align: left;
+}
+
+.review-card h3 {
+    color: #ff9800;
+}
+    </style>
+  
+</head>
+
+<body>
+    <nav class="mobile-nav">
+
+    <button id="menuButton">☰ Menu</button>
+
+    <div id="menuLinks" class="menu-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About Us</a>
+
+        <a href="contact.html">Contact</a>
+
+    </div>
+
+    </nav>
+  <button id="themeButton">Switch Theme</button>
+    <p id="clock"></p>
+
+    <h1>Welcome to Fuze Shop</h1>
+    <p>Quality products at affordable prices.</p>
+  <input
+    type="text"
+    id="productSearch"
+    placeholder="Search for a product..."
+    class="search-box">
+  <h2>My Shopping Cart</h2>
+  <div class="cart-counter">
+    🛒 Cart: <span id="cartCount">0</span>
+  </div>
+<div class="cart-box">
+    
+    <p>Total: K<span id="cartTotal">0</span></p>
+
+    <button id="clearCart">Clear Cart</button>
+</div>
+    <div class="product-card">
+      <img src="images/photo.jpg" alt="CRUSHER/GRINDER" class="product-image">
+<div class="rating-box">
+
+    <h3>Rate This Product</h3>
+
+    <button class="star" data-rating="1">★</button>
+    <button class="star" data-rating="2">★</button>
+    <button class="star" data-rating="3">★</button>
+    <button class="star" data-rating="4">★</button>
+    <button class="star" data-rating="5">★</button>
+
+    <p id="ratingMessage">Choose a rating.</p>
+
+</div>
+
+
+<h2>CRUSHER/GRINDER</h2>
+
+<p>Price: K350</p>
+
+<button
+    class="add-to-cart"
+    data-name="CRUSHER/GRINDER"
+    data-price="350">
+    Add to Cart
+</button>
+      <a
+    class="contact-button"
+    href="https://wa.me/260770595774?text=Hello%2C%20I%20want%20to%20order%20the%20CRUSHER/GRINDER">
+    Order Now
+  </a>
+    </div>
+      <p>Get your helbs fined with the metalic four layerd Crusher </p>
+        
+<div class="product-card">
+
+    <img src="Images/bracelet.jpg"
+         alt="Fashion bracelet"
+         class="product-image">
+  <div class="rating-box">
+
+    <h3>Rate This Product</h3>
+
+    <button class="star" data-rating="1">★</button>
+    <button class="star" data-rating="2">★</button>
+    <button class="star" data-rating="3">★</button>
+    <button class="star" data-rating="4">★</button>
+    <button class="star" data-rating="5">★</button>
+
+    <p id="ratingMessage">Choose a rating.</p>
+
+  </div>
+  <h2>Fashion Bracelet</h2>
+
+<p>Price: K120</p>
+
+<button
+    class="add-to-cart"
+    data-name="Fashion Bracelet"
+    data-price="120">
+    Add to Cart
+</button>
+<a
+    class="contact-button"
+    href="https://wa.me/260770595774?text=Hello%2C%20I%20would%20like%20to%20make%20an%20order%20for%20a%20Fashion%20Bracelet">
+    Order Now
+</a>
+    <p>Stylish bracelet for everyday wear.</p>
+
+<div class="product-card">
+
+    <img src="Images/necklace.jpg"
+         alt="Fashion necklace"
+         class="product-image">
+ <div class="rating-box">
+
+    <h3>Rate This Product</h3>
+
+    <button class="star" data-rating="1">★</button>
+    <button class="star" data-rating="2">★</button>
+    <button class="star" data-rating="3">★</button>
+    <button class="star" data-rating="4">★</button>
+    <button class="star" data-rating="5">★</button>
+
+    <p id="ratingMessage">Choose a rating.</p>
+
+</div>
+    <h2>Fashion Necklace</h2>
+  <p>price: k120</p>
+<button
+    class="add-to-cart"
+    data-name="Fashion Necklace"
+    data-price="120">
+    Add to Cart
+</button>
+  <a
+    class="contact-button"
+    href="https://wa.me/260770595774?text=Hello%2C%20I%20want%20to%20order%20the%20Fashion%20of%20Necklace">
+    Order Now
+  </a>
+    <p>A beautiful accessory for your collection.</p>
+
+<div class="product-card">
+
+  
+  <img src="Images/girlfriends day combo.jpg"
+       alt="Girlfriends Day Gift"
+       class="product-image">
+  <div class="rating-box">
+
+    <h3>Rate This Product</h3>
+
+    <button class="star" data-rating="1">★</button>
+    <button class="star" data-rating="2">★</button>
+    <button class="star" data-rating="3">★</button>
+    <button class="star" data-rating="4">★</button>
+    <button class="star" data-rating="5">★</button>
+
+    <p id="ratingMessage">Choose a rating.</p>
+
+</div>
+  <h2>Girlfriends Day Gift</h2>
+  <p>price: k180</p>
+  
+<button
+    class="add-to-cart"
+    data-name="Girlfriends Day Gift"
+    data-price="180">
+    Add to Cart
+</button>
+  <a
+    class="contact-button"
+    href="https://wa.me/260770595774?text=Hello%2C%20I%20want%20to%20order%20the%20Gilrfriends%20Day%20Gift">
+    Order Now
+  </a>
+  <p>A beatiful Gift full with beatiful accessories for your beatiful Girlfriend.</p>
+
+  <div class="product-card">
+
+    <img src="Images/tray.jpg"
+         alt="Hearb Tray"
+         class="product-image">
+<div class="rating-box">
+
+    <h3>Rate This Product</h3>
+
+    <button class="star" data-rating="1">★</button>
+    <button class="star" data-rating="2">★</button>
+    <button class="star" data-rating="3">★</button>
+    <button class="star" data-rating="4">★</button>
+    <button class="star" data-rating="5">★</button>
+
+    <p id="ratingMessage">Choose a rating.</p>
+
+</div>
+    <h2>Hearb Tray</h2>
+    <p>price: k150</p>
+    <button
+    class="add-to-cart"
+    data-name="Hearb Tray"
+    data-price="150">
+    Add to Cart
+    </button>
+    <a
+    class="contact-button"
+    href="https://wa.me/260770595774?text=Hello%2C%20I%20want%20to%20order%20the%20Hearb%20Tray">
+    Order Now
+  </a>
+    <p>Get yourself a Hearb Tray no need to spill the hearb when tolling up get yourself a good looking hearb Tray</p>
+
+    <div class="product-card">
+
+    <img src="Images/disposable vape.jpg"
+         alt="Disposable vape"
+         class="product-image">
+      <div class="rating-box">
+
+    <h3>Rate This Product</h3>
+
+    <button class="star" data-rating="1">★</button>
+    <button class="star" data-rating="2">★</button>
+    <button class="star" data-rating="3">★</button>
+    <button class="star" data-rating="4">★</button>
+    <button class="star" data-rating="5">★</button>
+
+    <p id="ratingMessage">Choose a rating.</p>
+
+</div>
+<h2>Disposable Vape 50,000 puffs</h2>
+<p>price: k550</p>
+      <button
+    class="add-to-cart"
+    data-name="Disposable Vapes"
+    data-price="550">
+    Add to Cart
+      </button>
+      <a
+    class="contact-button"
+    href="https://wa.me/260770595774?text=Hello%2C%20I%20want%20to%20order%20the%20Disposable%20Vape">
+    Order Now
+  </a>
+      
+      <p>Get yourself a 50,000 fuffs Oxber vape with different flavors.</p>
+
+      <div class="product-card">
+
+        <img src="Images/refillable vape.jpg"
+             alt="refillable vape"
+            class="product-image">
+<div class="rating-box">
+
+    <h3>Rate This Product</h3>
+
+    <button class="star" data-rating="1">★</button>
+    <button class="star" data-rating="2">★</button>
+    <button class="star" data-rating="3">★</button>
+    <button class="star" data-rating="4">★</button>
+    <button class="star" data-rating="5">★</button>
+
+    <p id="ratingMessage">Choose a rating.</p>
+
+</div>
+        
+        <h2>Refillable Vape Veporessor</h2>
+        <p>price: k1200</p> 
+
+        <button
+    class="add-to-cart"
+    data-name="Refillable Vape Veporessor"
+    data-price="1200">
+    Add to Cart
+    </button>
+        <a
+    class="contact-button"
+    href="https://wa.me/260770595774?text=Hello%2C%20I%20want%20to%20order%20the%20Refillable%20Vape">
+    Order Now
+  </a>
+        <p>Get yourself a Refillable vape, no need for you to despose it but keep on re-using it untill you by a new one because you will be just changing the E-liquid.</p>
+      </div>
+
+        
+    </div>
+
+      
+  </div>
+</div>
+</div>
+  <section class="reviews">
+
+    <h2>Customer Reviews</h2>
+
+    <div class="review-card">
+        <h3>Mr. Bwalya</h3>
+        <p>★★★★★</p>
+        <p>Beautiful product and excellent service.</p>
+    </div>
+
+    <div class="review-card">
+        <h3>Mercy</h3>
+        <p>★★★★☆</p>
+        <p>Good quality and affordable prices.</p>
+    </div>
+    
+<div class="review-card">
+        <h3>James</h3>
+        <p>★★★★☆</p>
+        <p>Good quality and affordable prices.</p>
+</div>
+
+    <div class="review-card">
+        <h3>Masauso</h3>
+        <p>★★★★★</p>
+        <p>Beautiful product and excellent service.</p>
+</div>
+
+  <div class="review-card">
+        <h3>Mwaba</h3>
+        <p>★★★★★</p>
+        <p>Beautiful product and excellent service.</p>
+    </div>
+<div class="review-card">
+        <h3>Jonathan</h3>
+        <p>★★★★★</p>
+        <p>Beautiful product and excellent service.</p>
+    </div>
+  
+  </section>
+<script>
+const searchBox = document.getElementById("productSearch");
+
+searchBox.addEventListener("input", function () {
+    const searchText = searchBox.value.toLowerCase();
+
+    const products = document.querySelectorAll(".product-card");
+
+    products.forEach(function (product) {
+        const productName = product
+            .querySelector("h2")
+            .textContent.toLowerCase();
+
+        if (productName.includes(searchText)) {
+            product.style.display = "";
+        } else {
+            product.style.display = "none";
+        }
+    });
+});
+</script>
+
+  <script>
+let cartCount = Number(localStorage.getItem("cartCount")) || 0;
+let cartTotal = Number(localStorage.getItem("cartTotal")) || 0;
+
+const countDisplay = document.getElementById("cartCount");
+const totalDisplay = document.getElementById("cartTotal");
+
+function updateCart() {
+
+    countDisplay.textContent = cartCount;
+    totalDisplay.textContent = cartTotal;
+
+    localStorage.setItem("cartCount", cartCount);
+    localStorage.setItem("cartTotal", cartTotal);
+}
+
+document.querySelectorAll(".add-to-cart").forEach(function(button) {
+
+    button.addEventListener("click", function() {
+
+        cartCount++;
+        cartTotal += Number(button.dataset.price);
+
+        updateCart();
+    });
+
+});
+
+document.getElementById("clearCart").addEventListener("click", function() {
+
+    cartCount = 0;
+    cartTotal = 0;
+
+    updateCart();
+});
+
+updateCart();
+  </script>
+  <script>
+const stars = document.querySelectorAll(".star");
+const message = document.getElementById("ratingMessage");
+
+stars.forEach(function(star) {
+
+    star.addEventListener("click", function() {
+
+        const rating = Number(star.dataset.rating);
+
+        stars.forEach(function(item) {
+
+            const itemRating = Number(item.dataset.rating);
+
+            if (itemRating <= rating) {
+                item.classList.add("selected");
+            } else {
+                item.classList.remove("selected");
+            }
+
+        });
+
+        message.textContent = "You rated this product " + rating + " out of 5.";
+
+    });
+
+});
+  </script>
+  <script src="js/script.js"></script>
+  <script>
+window.addEventListener("load", function() {
+    alert("Welcome to our shop! Happy shopping.");
+});
+  </script>
+      <script>
+        function updateClock() {
+
+            const now = new Date();
+
+            const time = now.toLocaleTimeString();
+            const date = now.toLocaleDateString();
+
+            document.getElementById("clock").textContent =
+                date + " | " + time;
+        }
+
+        updateClock();
+
+        setInterval(updateClock, 1000);
+    </script>
+<script>
+const themeButton = document.getElementById("themeButton");
+
+themeButton.addEventListener("click", function() {
+
+    document.body.classList.toggle("light-mode");
+
+});
+</script>
+  <script>
+const menuButton = document.getElementById("menuButton");
+const menuLinks = document.getElementById("menuLinks");
+
+menuButton.addEventListener("click", function() {
+
+    if (menuLinks.style.display === "block") {
+
+        menuLinks.style.display = "none";
+
+    } else {
+
+        menuLinks.style.display = "block";
+
+    }
+
+});
+  </script>
+</body>
+</html>
